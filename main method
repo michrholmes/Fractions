@@ -1,0 +1,39 @@
+//*************************************************************************************
+// Fractions.java                        Author: Michelle Holmes
+//
+// Program displays fraction submitted by user and calculates decimal 
+// equivalent of fraction. 
+//*************************************************************************************
+
+
+import java.util.Scanner;
+
+public class Fractions 
+{
+	//----------------------------------------------------------------------------
+	// Displays fraction submitted by user and calculates decimal equivalent. 
+	//____________________________________________________________________________
+	
+	public static void main(String[] args) 
+	{
+		int num, denom;
+		double decimal;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.print("Enter numerator: ");
+		num = scan.nextInt();              //numerator is entered
+		
+		System.out.print("Enter denominator: ");
+		denom = scan.nextInt();            //denominator is entered
+		
+		System.out.println("Your Fraction is: " + num + "/" + denom);
+		
+		decimal = (double)num / denom;     //decimal equivalent of fraction equation 
+		
+		System.out.println("The decimal equivalent of your fraction is: " + 
+		decimal);
+	
+	}
+
+}
